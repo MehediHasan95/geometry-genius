@@ -31,7 +31,7 @@ function GeometryCalculation(equation, num1, num2) {
       return 3.1416 * valueOne * valueTwo;
     }
   } else {
-    alert("Please input a valid number");
+    alert("Invalid Input");
   }
 }
 
