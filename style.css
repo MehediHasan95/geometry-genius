@@ -1,0 +1,12 @@
+#final-output {
+  counter-reset: section;
+}
+
+#final-output div::before {
+  counter-increment: section;
+  content: counter(section) "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  font-size: 1.5em;
+}
