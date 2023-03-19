@@ -24,16 +24,16 @@
       <!-- 2 -->
       <div class="bg-white rounded-md p-3 m-3">
         <h1 class="text-2xl font-bold mb-3">
-          2. How to select elements from dom
+          2. How to select an elements from dom?
         </h1>
-        <p>
-          কোন একটা element এর মধ্যে EventHandler থাকে তাহলে সে নিজেকেও execute
-          করে, তার সাথে parent ও যদি EventHandler থাকে তাহলে ওইটাকেও execute করে
-          এবং ওই parent এর উপরেও যদি EventHandler থাকে তাহলে ওইটাকেও execute
-          করে। মানে এক click এর জন্যে সবগুলাকে execute করে এইটাকে event bubble
-          বলে। এখন এইটাকে বন্ধ করতে চাইলে তোমাকে stopPropagation() বা
-          stopImmediatePropagation() দিতে হবে।
-        </p>
+        <p>There are five ways to select an element from dom?</p>
+        <ul>
+          <li>1. getElementsByTagName()</li>
+          <li>2. getElementsByClassName()</li>
+          <li>3. getElementById()</li>
+          <li>4. querySelector()</li>
+          <li>5. querySelectorAll()</li>
+        </ul>
       </div>
       <!-- 3 -->
       <div class="bg-white rounded-md p-3 m-3">
@@ -53,12 +53,10 @@
       <div class="bg-white rounded-md p-3 m-3">
         <h1 class="text-2xl font-bold mb-3">4. What is callback function?</h1>
         <p>
-          কোন একটা element এর মধ্যে EventHandler থাকে তাহলে সে নিজেকেও execute
-          করে, তার সাথে parent ও যদি EventHandler থাকে তাহলে ওইটাকেও execute করে
-          এবং ওই parent এর উপরেও যদি EventHandler থাকে তাহলে ওইটাকেও execute
-          করে। মানে এক click এর জন্যে সবগুলাকে execute করে এইটাকে event bubble
-          বলে। এখন এইটাকে বন্ধ করতে চাইলে তোমাকে stopPropagation() বা
-          stopImmediatePropagation() দিতে হবে।
+          আমরা চাইলে কোনো একটা ফাংশনকে কল করার সময় এর প্যারামিটার হিসেবে আর একটা
+          ফাংশন কে পাঠাতে পারি এবং এই প্যারামিটারটা তা যে ফাংশন এর ভিতর যাবে ওই
+          ফাংশন এর ভিতর থেকে চাইলে আমরা প্যারামিটার হিসেবে যে ফাংশন কে পাঠাইছি
+          তাকে কল করে দিতে পারি একেই বলে callBack function
         </p>
       </div>
     </main>
