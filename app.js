@@ -38,9 +38,7 @@ function GeometryCalculation(equation, num1, num2) {
 function displayResult(equation, result) {
   const section = document.getElementById("final-output");
   const div = document.createElement("div");
-
   div.classList.add("p-3", "my-3", "text-center", "bg-green-200", "relative");
-
   div.innerHTML = `
   <h1 class="text-3xl font-bold">${result.toFixed(2)}cm<sup>2</sup></h1>
   <p>${equation.toUpperCase()}</p>

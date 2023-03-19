@@ -1,7 +1,6 @@
 #final-output {
   counter-reset: section;
 }
-
 #final-output div::before {
   counter-increment: section;
   content: counter(section) "";
