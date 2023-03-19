@@ -3,11 +3,189 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>B7A5-geometry-genius-assignment</title>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="p-4 lg:p-8 bg-gray-100 text-slate-700">
+    <header
+      class="bg-blue-200 px-5 py-2 flex justify-between items-center rounded-md"
+    >
+      <h1>
+        <span class="text-3xl font-bold">Interactive</span><br /><span
+          class="text-base"
+          >Geometry Genius</span
+        >
+      </h1>
+      <button
+        class="px-5 py-1 rounded-md bg-blue-500 text-white hover:bg-blue-600"
+      >
+        Blog
+      </button>
+    </header>
+    <main class="grid gap-3 grid-cols-1 lg:grid-cols-4 mt-5">
+      <div class="col-span-1 lg:col-span-3">
+        <div class="grid gap-5 grid-cols-1 lg:grid-cols-3">
+          <div class="col-span-1 bg-white rounded-md p-3 text-center shadow">
+            <img src="/images/triangle.png" alt="" class="mx-auto mb-5" />
+            <h1 class="font-bold">Triangle</h1>
+            <p>Area (A) = 0.5 × b × h</p>
+            <div class="my-3">
+              <label for="">
+                <input
+                  type="text"
+                  class="w-3/12 border outline-none rounded-md mr-2 px-2"
+                  placeholder="b"
+                />cm
+              </label>
+              <label for="">
+                <input
+                  type="text"
+                  class="w-3/12 border outline-none rounded-md mr-2 px-2"
+                  placeholder="h"
+                />cm
+              </label>
+            </div>
+            <button
+              id="calculate-triangle"
+              class="w-3/6 p-2 rounded-md bg-blue-500 text-white hover:bg-blue-600"
+            >
+              Calculate
+            </button>
+          </div>
+          <div class="col-span-1 bg-white rounded-md p-3 text-center shadow">
+            <img src="/images/rectangle.png" alt="" class="mx-auto mb-5" />
+            <h1 class="font-bold">Rectangle</h1>
+            <p>Area (A) = w × i</p>
+            <div class="my-3">
+              <label for="">
+                <input
+                  type="text"
+                  class="w-3/12 border outline-none rounded-md mr-2 px-2"
+                  placeholder="w"
+                />cm
+              </label>
+              <label for="">
+                <input
+                  type="text"
+                  class="w-3/12 border outline-none rounded-md mr-2 px-2"
+                  placeholder="i"
+                />cm
+              </label>
+            </div>
+            <button
+              class="w-3/6 p-2 rounded-md bg-blue-500 text-white hover:bg-blue-600"
+            >
+              Calculate
+            </button>
+          </div>
+          <div class="col-span-1 bg-white rounded-md p-3 text-center shadow">
+            <img src="/images/parallelogram.png" alt="" class="mx-auto mb-5" />
+            <h1 class="font-bold">Parallelogram</h1>
+            <p>Area(A) = b × h</p>
+            <div class="my-3">
+              <label for="">
+                <input
+                  type="text"
+                  class="w-3/12 border outline-none rounded-md mr-2 px-2"
+                  placeholder="b"
+                />cm
+              </label>
+              <label for="">
+                <input
+                  type="text"
+                  class="w-3/12 border outline-none rounded-md mr-2 px-2"
+                  placeholder="h"
+                />cm
+              </label>
+            </div>
+            <button
+              class="w-3/6 p-2 rounded-md bg-blue-500 text-white hover:bg-blue-600"
+            >
+              Calculate
+            </button>
+          </div>
+          <div class="col-span-1 bg-white rounded-md p-3 text-center shadow">
+            <img src="/images/rhombus.png" alt="" class="mx-auto mb-5" />
+            <h1 class="font-bold">Rhombus</h1>
+            <p>Area(A) = 0.5 × d<sub>1</sub> × d<sub>2</sub></p>
+            <div class="my-3">
+              <label for="">
+                <input
+                  type="text"
+                  class="w-3/12 border outline-none rounded-md mr-2 px-2"
+                  placeholder="d1"
+                />cm
+              </label>
+              <label for="">
+                <input
+                  type="text"
+                  class="w-3/12 border outline-none rounded-md mr-2 px-2"
+                  placeholder="d2"
+                />cm
+              </label>
+            </div>
+            <button
+              class="w-3/6 p-2 rounded-md bg-blue-500 text-white hover:bg-blue-600"
+            >
+              Calculate
+            </button>
+          </div>
+          <div class="col-span-1 bg-white rounded-md p-3 text-center shadow">
+            <img src="/images/pentagon.png" alt="" class="mx-auto mb-5" />
+            <h1 class="font-bold">Pentagon</h1>
+            <p>Area(A) = 0.5 × p × b</p>
+            <div class="my-3">
+              <label for="">
+                <input
+                  type="text"
+                  class="w-3/12 border outline-none rounded-md mr-2 px-2"
+                  placeholder="p"
+                />cm
+              </label>
+              <label for="">
+                <input
+                  type="text"
+                  class="w-3/12 border outline-none rounded-md mr-2 px-2"
+                  placeholder="b"
+                />cm
+              </label>
+            </div>
+            <button
+              class="w-3/6 p-2 rounded-md bg-blue-500 text-white hover:bg-blue-600"
+            >
+              Calculate
+            </button>
+          </div>
+          <div class="col-span-1 bg-white rounded-md p-3 text-center shadow">
+            <img src="/images/ellipse.png" alt="" class="mx-auto mb-5" />
+            <h1 class="font-bold">Ellipse</h1>
+            <p>Area(A) = 0.5 πab</p>
+            <div class="my-3">
+              <label for="">
+                <input
+                  type="text"
+                  class="w-3/12 border outline-none rounded-md mr-2 px-2"
+                  placeholder="a"
+                />cm
+              </label>
+              <label for="">
+                <input
+                  type="text"
+                  class="w-3/12 border outline-none rounded-md mr-2 px-2"
+                  placeholder="b"
+                />cm
+              </label>
+            </div>
+            <button
+              class="w-3/6 p-2 rounded-md bg-blue-500 text-white hover:bg-blue-600"
+            >
+              Calculate
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-1">2</div>
+    </main>
     <script src="/app.js"></script>
   </body>
 </html>
